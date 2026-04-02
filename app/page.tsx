@@ -4,6 +4,9 @@ import { FeatureGrid } from "@/components/landing/FeatureGrid";
 import { SectionHeading } from "@/components/landing/SectionHeading";
 import styles from "./page.module.css";
 
+const APP_STORE_URL = "https://www.apple.com/app-store/";
+const GOOGLE_PLAY_URL = "https://play.google.com/store";
+
 const featureItems = [
   {
     eyebrow: "Daily Command",
@@ -114,10 +117,42 @@ export default function Home() {
               communication, and weekly reporting in one clean flow so you can
               run the day with less friction.
             </p>
-            <ActionButtons
-              primary={{ href: "#get-started", label: "Get Started" }}
-              secondary={{ href: "#how-it-works", label: "Track Your First Ride" }}
-            />
+            <div className={styles.heroActions}>
+              <ActionButtons
+                primary={{ href: "#get-started", label: "Get Started" }}
+                secondary={{ href: "#how-it-works", label: "Track Your First Ride" }}
+              />
+            </div>
+            <div className={styles.storeBadges}>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Download RouteFlow on the App Store"
+              >
+                <Image
+                  src="/app-store-badge.svg"
+                  alt="Download on the App Store"
+                  width={160}
+                  height={53}
+                  className={styles.storeBadgeImage}
+                />
+              </a>
+              <a
+                href={GOOGLE_PLAY_URL}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Get RouteFlow on Google Play"
+              >
+                <Image
+                  src="/google-play-badge.png"
+                  alt="Get it on Google Play"
+                  width={180}
+                  height={54}
+                  className={styles.storeBadgeImage}
+                />
+              </a>
+            </div>
             <div className={styles.heroHighlights}>
               <span>Daily ride command center</span>
               <span>Repeat-route friendly</span>
@@ -130,7 +165,7 @@ export default function Home() {
             <div className={styles.deviceFrame}>
               <div className={styles.deviceHeader}>
                 <Image
-                  src="/routeflow-badge-light.svg"
+                  src="/routeflow-badge-dark.svg"
                   alt=""
                   width={154}
                   height={28}
@@ -142,7 +177,7 @@ export default function Home() {
                 <div className={styles.routeCard}>
                   <div>
                     <p>Today&apos;s route</p>
-                    <strong>12 rides across 3 recurring runs</strong>
+                    <strong>3 rides across 2 recurring runs</strong>
                   </div>
                   <span>Live</span>
                 </div>

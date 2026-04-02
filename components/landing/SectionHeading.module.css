@@ -1,0 +1,31 @@
+.wrapper {
+  max-width: 40rem;
+}
+
+.centered {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #82ebff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.wrapper h2 {
+  margin-top: 0.95rem;
+  color: #f7fcff;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.description {
+  margin-top: 1rem;
+  color: rgba(220, 235, 244, 0.76);
+  font-size: 1rem;
+  line-height: 1.75;
+}

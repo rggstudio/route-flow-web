@@ -294,7 +294,17 @@ export default function Home() {
       </section>
 
       <footer className={styles.footer}>
-        <p>RouteFlow Mobile</p>
+        <p>
+          Copyright 2026. Developed by{" "}
+          <a
+            href="https://rggstudio.com"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.footerCredit}
+          >
+            RGG Studio LLC
+          </a>
+        </p>
         <div className={styles.footerLinks}>
           <Link href="/privacy">Privacy</Link>
           <Link href="/terms">Terms</Link>

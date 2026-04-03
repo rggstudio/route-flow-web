@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ActionButtons } from "@/components/landing/ActionButtons";
 import { FeatureGrid } from "@/components/landing/FeatureGrid";
 import { SectionHeading } from "@/components/landing/SectionHeading";
@@ -291,6 +292,14 @@ export default function Home() {
           secondary={{ href: "#features", label: "See The Driver Workflow" }}
         />
       </section>
+
+      <footer className={styles.footer}>
+        <p>RouteFlow Mobile</p>
+        <div className={styles.footerLinks}>
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
+        </div>
+      </footer>
     </main>
   );
 }

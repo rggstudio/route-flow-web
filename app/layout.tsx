@@ -13,7 +13,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://route-flow-web.vercel.app"),
+  metadataBase: new URL("https://route-flow-app.vercel.app"),
   title: "RouteFlow Mobile",
   description:
     "RouteFlow Mobile helps independent drivers organize rides, recurring routes, navigation, rider communication, earnings, and weekly summaries.",
